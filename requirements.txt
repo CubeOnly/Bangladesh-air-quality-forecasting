@@ -1,1 +1,5 @@
-
+pandas
+numpy
+requests
+statsmodels
+matplotlib

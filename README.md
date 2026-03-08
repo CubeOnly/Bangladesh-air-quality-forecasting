@@ -46,22 +46,40 @@ The forecasting system follows a structured data pipeline.
 
 
 Open-Meteo Air Quality API
+           
+           
            ↓
 Python Data Ingestion Pipeline
+           
+           
            ↓
 Normalization & Validation
+           
+           
            ↓
 UTC Timestamp Standardization
+           
+           
            ↓
 SQLite Database Storage
+           
+           
            ↓
 Time-Series Dataset Extraction
+           
+           
            ↓
 Forecasting Models (ARIMA / SARIMA)
+           
+           
            ↓
 Rolling-Origin Validation
+           
+           
            ↓
 Multi-City Model Evaluation
+           
+           
            ↓
 Visualization & Results
 

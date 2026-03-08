@@ -108,8 +108,24 @@ Data is retrieved as **hourly observations** for each city.
 
 ## Database Design
 
-Observations are stored in a structured SQLite database.
+Observations are stored in a structured **SQLite database**.
 
+(```sql
+CREATE TABLE air_quality_data (
+    city_name TEXT,
+    timestamp_utc TEXT,
+    latitude REAL,
+    longitude REAL,
+    pm2_5 REAL,
+    pm10 REAL,
+    carbon_monoxide REAL,
+    nitrogen_dioxide REAL,
+    ozone REAL,
+    source_name TEXT,
+    ingestion_time_utc TEXT,
+    PRIMARY KEY (city_name, timestamp_utc)
+)
+)
 **Table**
 
 
@@ -273,7 +289,7 @@ These results highlight how pollution dynamics differ across geographic location
 Clone the repository
 
 
-git clone https://github.com/yourusername/air-quality-forecast-bangladesh
+git clone https://github.com/CubeOnly/air-quality-forecast-bangladesh
 
 
 Install dependencies
@@ -285,26 +301,26 @@ pip install -r requirements.txt
 Run ingestion pipeline
 
 
-python scripts/ingest_air_quality_data.py
+python ingest_air_quality_data.py
 
 
 Run forecasting models
 
 
-python scripts/forecast_model_arima.py
-python scripts/forecast_model_sarima.py
+python forecast_model_arima.py
+python forecast_model_sarima.py
 
 
 Run validation
 
 
-python scripts/forecast_validation_multicity.py
+python forecast_validation_multicity.py
 
 
 Generate comparison plots
 
 
-python scripts/multicity_metrics_plot.py
+python multicity_metrics_plot.py
 
 
 ---

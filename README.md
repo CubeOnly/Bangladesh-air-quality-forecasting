@@ -110,7 +110,13 @@ Data is retrieved as **hourly observations** for each city.
 
 Observations are stored in a structured **SQLite database**.
 
-(```sql
+## Database Design
+
+Observations are stored in a structured **SQLite database**.
+
+### Table Schema
+
+```sql
 CREATE TABLE air_quality_data (
     city_name TEXT,
     timestamp_utc TEXT,
@@ -124,8 +130,11 @@ CREATE TABLE air_quality_data (
     source_name TEXT,
     ingestion_time_utc TEXT,
     PRIMARY KEY (city_name, timestamp_utc)
-)
-)
+);
+```
+
+
+
 **Table**
 
 

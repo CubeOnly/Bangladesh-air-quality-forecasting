@@ -268,7 +268,8 @@ Urban environments with stronger daily pollution cycles benefited from **seasona
 
 Example rolling-origin forecast for Dhaka.
 
-*(Insert forecast figure here)*
+<img width="1024" height="579" alt="rolling_validation" src="https://github.com/user-attachments/assets/a035d353-ccc5-4f8d-96e5-a50bc631986d" />
+
 
 ---
 
@@ -276,7 +277,8 @@ Example rolling-origin forecast for Dhaka.
 
 Model performance differences across cities.
 
-*(Insert RMSE comparison figure here)*
+<img width="1200" height="600" alt="multicity_rmse_comparison" src="https://github.com/user-attachments/assets/46b38c00-858d-4074-9e36-2fabae66b148" />
+
 
 These results highlight how pollution dynamics differ across geographic locations.
 
@@ -298,7 +300,7 @@ These results highlight how pollution dynamics differ across geographic location
 Clone the repository
 
 
-git clone https://github.com/CubeOnly/air-quality-forecast-bangladesh
+git clone https://github.com/MeherabHS/air-quality-forecast-bangladesh
 
 
 Install dependencies
